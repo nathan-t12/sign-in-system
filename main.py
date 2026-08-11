@@ -315,7 +315,7 @@ def signInOut():
     if inorout == 'signin':
         workContent = driver.find_element(By.ID, 'AttendWork')
         # workContent.click()  # Removed to avoid ElementClickInterceptedException
-        workContent.send_keys('MCL工讀')
+        workContent.send_keys('網管')
         time.sleep(.5)
 
         signin_button = driver.find_element(By.ID, 'signin')
@@ -346,7 +346,7 @@ def signInOut():
                 signin_button = driver.find_element(By.ID, 'signin')
                 workContent = driver.find_element(By.ID, 'AttendWork')
                 # workContent.click()  # Removed to avoid ElementClickInterceptedException
-                workContent.send_keys('MCL工讀')
+                workContent.send_keys('網管')
                 time.sleep(.5)
 
                 signin_button = driver.find_element(By.ID, 'signin')
