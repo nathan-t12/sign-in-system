@@ -3,7 +3,9 @@ name: Sign Out
 on:
   schedule:
     # UTC+8 9~17 -> UTC+0 1~9, run every weekday.
-    - cron: "10 9 * * 1-5"
+    # - cron: "10 9 * * 1-5" #8小
+    # UTC+8 10~15 -> UTC+0 2~7, run every weekday.
+    - cron: "25 7 * * 1-4" #5小
   workflow_dispatch:
 
 jobs:
